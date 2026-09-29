@@ -1,0 +1,11 @@
+order_id,item,ordered_at,picked_up_at,status
+O-001,Pho Special,2026-01-15 12:00,,unclaimed
+O-002,Spring Rolls,2026-01-15 12:05,,unclaimed
+O-003,Beef Pho,2026-01-15 12:08,,unclaimed
+O-004,Chicken Pho,2026-01-15 12:10,,unclaimed
+O-005,Vegetable Pho,2026-01-15 12:15,,unclaimed
+O-006,Iced Tea,2026-01-15 12:20,,unclaimed
+O-007,Egg Rolls,2026-01-15 12:25,,unclaimed
+O-008,Pho Special,2026-01-15 11:30,2026-01-15 12:00,picked_up
+O-009,Spring Rolls,2026-01-15 11:45,2026-01-15 12:15,picked_up
+O-010,Beef Pho,2026-01-15 12:00,2026-01-15 12:20,picked_up

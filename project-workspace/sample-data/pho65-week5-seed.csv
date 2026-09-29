@@ -1,0 +1,30 @@
+record_id,customer_name,phone_number,opted_in,visit_date,order_type,catering_slot
+R001,Mai Tran,555-201-0001,true,2026-01-05,dine_in,
+R002,Mai Tran,555-201-0001,true,2026-01-12,takeout,
+R003,Mai Tran,555-201-0001,true,2026-01-19,dine_in,
+R004,Mai Tran,555-201-0001,true,2026-01-26,takeout,
+R005,Mai Tran,555-201-0001,true,2026-02-02,dine_in,
+R006,Mai Tran,555-201-0001,true,2026-02-06,takeout,
+R007,Mai Tran,555-201-0001,true,2026-02-09,dine_in,
+R008,Mai Tran,555-201-0001,true,2026-02-12,takeout,
+R009,Linh Pham,555-202-0002,false,2026-02-03,dine_in,
+R010,Linh Pham,555-202-0002,false,2026-02-06,takeout,
+R011,Linh Pham,555-202-0002,false,2026-02-10,dine_in,
+R012,Linh Pham,555-202-0002,false,2026-02-13,takeout,
+R013,Anh Nguyen,555-203-0003,true,2026-01-05,dine_in,
+R014,Anh Nguyen,555-203-0009,true,2026-01-10,takeout,
+R015,Anh Nguyen,555-203-0003,true,2026-01-15,dine_in,
+R016,Duc Le,555-204-0004,true,2026-02-14,catering,2026-02-14 18:00
+R017,Kim Vo,555-205-0005,true,2026-02-14,catering,2026-02-14 18:45
+R018,Trang Bui,555-206-0006,false,2026-02-14,catering,2026-02-14 19:30
+R019,Phuc Ha,555-207-0007,true,2026-02-14,catering,2026-02-14 14:30
+R020,Sam Dinh,555-208-0008,true,2026-01-20,dine_in,
+R021,Rosa Kim,555-209-0009,true,2026-01-02,takeout,
+R022,Rosa Kim,555-209-0009,true,2026-02-01,dine_in,
+R023,Tom Ng,555-210-0010,false,2026-02-05,dine_in,
+R024,Ivy Chen,555-211-0011,true,2026-01-25,dine_in,
+R025,Ivy Chen,555-211-0011,true,2026-02-08,takeout,
+R026,Ben Tran,555-212-0012,false,2026-01-01,dine_in,
+R027,Ben Tran,555-212-0012,false,2026-01-20,takeout,
+R028,Ben Tran,555-212-0012,false,2026-02-10,dine_in,
+R029,Guest,,true,2026-02-04,dine_in,

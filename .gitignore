@@ -1,0 +1,10 @@
+# local runtime state -- never commit
+project-workspace/docker/inventory-data/*.db
+__pycache__/
+*.pyc
+.DS_Store
+# secrets never belong here
+*.pem
+id_*
+!id_*.pub
+.env.local

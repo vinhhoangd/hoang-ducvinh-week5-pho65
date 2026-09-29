@@ -1,0 +1,27 @@
+# Pho65 teaching sshd_config
+# Local/fabricated-credential teaching environment only. Not a hardened
+# production configuration.
+
+Port 22
+ListenAddress 0.0.0.0
+
+# --- Key-based authentication only ---
+# Every student (ADI201 and ADI501) generates their own SSH keypair and
+# installs the PUBLIC key here. PasswordAuthentication is disabled on
+# purpose: it makes "wrong/stale public key installed" (the seeded Stage 2
+# failure) produce an unambiguous "Permission denied (publickey)" error
+# instead of silently falling back to a password prompt.
+PubkeyAuthentication yes
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+KbdInteractiveAuthentication no
+AuthenticationMethods publickey
+
+PermitRootLogin no
+StrictModes yes
+AuthorizedKeysFile .ssh/authorized_keys
+
+UsePAM yes
+Subsystem sftp /usr/lib/openssh/sftp-server
+
+PrintMotd yes
