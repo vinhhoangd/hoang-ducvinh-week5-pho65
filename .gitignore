@@ -10,3 +10,4 @@ id_*
 .env.local
 ngrok.yml
 .env
+*.zip
