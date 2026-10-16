@@ -13,6 +13,11 @@
 # during packaging, with a clean (unseeded) sshd/authorized_keys -- Week 5
 # has no seeded network/auth failure of its own.
 
+# Pinned project name. Without it Compose names the project after the folder
+# ("docker"), which every course week shares -- so one week's `up` can recreate
+# or replace another week's containers. Week 4 pins pho65-w4 for the same reason.
+name: pho65-w5
+
 services:
   app:
     build: ./app
@@ -24,6 +29,8 @@ services:
       OVERDUE_MIN_CONFIG_PATH: "/config/overdue.env"
       CRM_SEED_CSV: "/data/pho65-week5-seed.csv"
       CRM_AS_OF: "2026-02-15"
+      # Week 5 Step 5 fix: phone-number corrections (shared-config, re-read per request).
+      PHONE_CROSSWALK_PATH: "/config/phone-crosswalk.csv"
     volumes:
       - ../sample-data:/data:ro
       # Persistent local SQLite ledger. Reset it only with the documented fixture command.

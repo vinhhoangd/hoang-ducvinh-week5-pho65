@@ -1,0 +1,7 @@
+# Phone-number corrections, applied before customers are grouped (Week 5 Step 5 fix).
+# One line per typo: wrong_phone,correct_phone,note
+# A line is applied only when the customer name on the wrong number already
+# appears on the correct number, so a bad line cannot merge two different people.
+# The app re-reads this file on every /crm request; no restart needed.
+wrong_phone,correct_phone,note
+555-203-0009,555-203-0003,R014 Anh Nguyen: last digit typed 9 instead of 3 (R013 and R015 use 0003)

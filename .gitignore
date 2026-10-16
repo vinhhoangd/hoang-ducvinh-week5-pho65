@@ -8,3 +8,5 @@ __pycache__/
 id_*
 !id_*.pub
 .env.local
+ngrok.yml
+.env

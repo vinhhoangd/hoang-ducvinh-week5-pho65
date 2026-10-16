@@ -1,0 +1,6 @@
+# Pho65 pilot staff list. One name per line; blank lines and #comments ignored.
+# Edit here, over SSH at /config/staff.txt, or in the app at /inventory/staff (PIN required).
+# Fictional class data only - no real employee records.
+Vinh Hoang
+Shiming
+Yuhe

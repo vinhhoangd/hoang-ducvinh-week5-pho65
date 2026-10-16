@@ -26,6 +26,14 @@ except ValueError as error:
     assert "already recorded" in str(error)
 else:
     raise AssertionError("duplicate request was accepted")
+# A repeat of the last "use 12" must say "already recorded", even though a
+# second use of 12 would also have driven stock negative (8 on hand).
+try:
+    app.add_transaction(item_id, "used", -12, None, "test", "double tap", "r3")
+except ValueError as error:
+    assert "already recorded" in str(error), error
+else:
+    raise AssertionError("duplicate request was accepted")
 try:
     app.add_transaction(item_id, "used", -100, None, "test", "negative", "r4")
 except ValueError as error:
