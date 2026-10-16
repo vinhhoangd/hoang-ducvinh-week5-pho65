@@ -38,7 +38,7 @@ Type your team's actual answers directly into this file as you work through `wee
 
 Two records are the same customer when they have the **same phone number** (compared by digits only, so `555-203-0003` and `(555) 203-0003` match) **and** the **most recent** record for that number has `opted_in=true`. Only the opted-in records are counted as visits, and visits after the as-of date are ignored. A record with no phone number, or a number whose latest record says `opted_in=false`, is **not eligible**: it is never scored, which is different from "not a regular". Known typos are corrected first by `shared-config/phone-crosswalk.csv`. A correction applies only if the name on the wrong number already appears on the right number.
 
-**1.3** Your thresholds and justification *(class defaults, set by Claude; Vinh to confirm or change before submission)*:
+**1.3** Your thresholds and justification (class defaults, reviewed and kept by the team):
 
 | Threshold | Value | Justification |
 |---|---|---|
